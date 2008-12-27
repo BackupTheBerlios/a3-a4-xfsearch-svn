@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://www.qualipso.org/ontology/doc/qualipso_source_code#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://www.qualipso.org/ontology/doc/qualipso_source_code" > 
+  <rdf:Description rdf:about="#returnComment">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#Method"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:resource="#Attribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="#SimpleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:unionOf rdf:nodeID="A5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Java">
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Java</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#boolean">
+    <rdf:type rdf:resource="#SimpleType"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boolean</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Attribute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:first rdf:resource="#SourceCodeModule"/>
+    <rdf:rest rdf:nodeID="A8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:first rdf:resource="#Interface"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#filename">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#SourceCodeFile"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#extendsClass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Class"/>
+    <rdfs:domain rdf:resource="#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasSourceFile">
+    <rdfs:range rdf:resource="#SourceCodeFile"/>
+    <rdfs:domain rdf:resource="#Package"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:first rdf:resource="#Interface"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasPackage">
+    <rdfs:domain rdf:resource="#SourceCodeModule"/>
+    <rdfs:range rdf:resource="#Package"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#implements">
+    <rdfs:range rdf:resource="#Interface"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasReturnValue">
+    <rdfs:domain rdf:resource="#Method"/>
+    <rdfs:range rdf:resource="#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HTML">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</name>
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasClass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Class"/>
+    <rdfs:domain rdf:resource="#SourceCodeFile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ProgrammingLanguage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#double">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">double</name>
+    <rdf:type rdf:resource="#SimpleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="A6"/>
+    <rdfs:range rdf:resource="#Method"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#uses">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Class">
+    <rdfs:subClassOf rdf:resource="#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:rest rdf:nodeID="A12"/>
+    <rdf:first rdf:resource="#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:nodeID="A10"/>
+    <rdf:first rdf:resource="#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#programmingLanguage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#SourceCodeFile"/>
+    <rdfs:range rdf:resource="#ProgrammingLanguage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasAttribute">
+    <rdfs:range rdf:resource="#Attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="A13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:nodeID="A15"/>
+    <rdf:first rdf:resource="#Interface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PHP">
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHP</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SourceCodeFile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Interface">
+    <rdfs:subClassOf rdf:resource="#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:first rdf:resource="#Interface"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#ProgrammingLanguage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#author">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="A17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A18"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SourceCodeModule">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:unionOf rdf:nodeID="A19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Axiom_1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="A20"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#version">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#url">
+    <rdfs:domain rdf:resource="#SourceCodeFile"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Perl">
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perl</name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:first rdf:resource="#Class"/>
+    <rdf:rest rdf:nodeID="A9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#extendsInterface">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Interface"/>
+    <rdfs:domain rdf:resource="#Interface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasInternalInterface">
+    <rdfs:range rdf:resource="#Interface"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:rest rdf:nodeID="A14"/>
+    <rdf:first rdf:resource="#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Javascript">
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Javascript</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#usesInterface">
+    <rdfs:domain rdf:resource="#Class"/>
+    <rdfs:range rdf:resource="#Interface"/>
+    <rdfs:subPropertyOf rdf:resource="#uses"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasInterface">
+    <rdfs:range rdf:resource="#Interface"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#SourceCodeFile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#exceptionComment">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Method"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasType">
+    <rdfs:range rdf:resource="#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Attribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:first rdf:resource="#Class"/>
+    <rdf:rest rdf:nodeID="A16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#int">
+    <rdf:type rdf:resource="#SimpleType"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">int</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasSubpackage">
+    <rdfs:range rdf:resource="#Package"/>
+    <rdfs:domain rdf:resource="#Package"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:rest rdf:nodeID="A24"/>
+    <rdf:first rdf:resource="#Attribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <owl:unionOf rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#invokesMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Method"/>
+    <rdfs:range rdf:resource="#Method"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#byte">
+    <rdf:type rdf:resource="#SimpleType"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">byte</name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <rdf:rest rdf:nodeID="A27"/>
+    <rdf:first rdf:resource="#Interface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Element">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:first rdf:resource="#Method"/>
+    <rdf:rest rdf:nodeID="A29"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <owl:unionOf rdf:nodeID="A22"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:resource="#Package"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#XHTML">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHTML</name>
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Method">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#paramComment">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Method"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Cplusplus">
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cplusplus</name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:rest rdf:nodeID="A30"/>
+    <rdf:first rdf:resource="#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasInternalClass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Class"/>
+    <rdfs:domain rdf:resource="#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#Attribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#char">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">char</name>
+    <rdf:type rdf:resource="#SimpleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Constructor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#Method"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CSharp">
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSharp</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#usesClass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Class"/>
+    <rdfs:domain rdf:resource="#Class"/>
+    <rdfs:subPropertyOf rdf:resource="#uses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:first rdf:resource="#Class"/>
+    <rdf:rest rdf:nodeID="A26"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:first rdf:resource="#Method"/>
+    <rdf:rest rdf:nodeID="A23"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <rdf:first rdf:resource="#Interface"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SimpleType">
+    <rdfs:subClassOf rdf:resource="#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Ruby">
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruby</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VisualBasic">
+    <rdf:type rdf:resource="#ProgrammingLanguage"/>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VisualBasic</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#string">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</name>
+    <rdf:type rdf:resource="#SimpleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#Method"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A21"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#comment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A25"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:first rdf:resource="#Interface"/>
+    <rdf:rest rdf:nodeID="A28"/>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name    = "A3-A4_Integrated_XFSearch"
+         default = "copy_classes"
+         basedir = "..">
+
+  <!-- ================================================================ -->
+  <!-- Set project properties.                                          -->
+  <!-- ================================================================ -->
+  <property name="Qualipso" value="qualipso"/>
+  <property name="GForge" value="gforge"/>
+  <property name="lib" value="${Qualipso}/lib"/>
+  <property name="source" value="${Qualipso}/build/classes"/>	
+  <property name="properties" value="${GForge}/WebContent/WEB-INF/properties"/>
+  <property name="target" value="${GForge}/WebContent/WEB-INF/classes/"/>
+	
+  <!-- =================================================================== -->
+  <!-- Sets the date properties                                            -->
+  <!-- =================================================================== -->
+  <target name="date"
+          description="Sets the date properties">
+    <tstamp>
+      <format property="DATE" pattern="d MMMM yyyy" />
+      <format property="HOUR" pattern="HH:mm:ss" />
+      <format property="YEAR" pattern="yyyy" />
+    </tstamp>
+  </target>	
+
+  <!-- =================================================================== -->
+  <!-- Clear GForge_Semantic_Search bin dir                                -->
+  <!-- =================================================================== -->
+  <target name="clean.GForge" depends="date">
+    <delete dir="${target}"/>
+  	<mkdir dir="${target}"/>
+  </target>	  	
+	
+  <!-- =================================================================== -->
+  <!-- Clear GForge_Semantic_Search bin dir                                -->
+  <!-- =================================================================== -->	
+  <target name="copy_classes" depends="clean.GForge">
+	<copy todir="${target}">
+		<fileset dir="${source}" excludes="**/*.properties"/>
+		<fileset dir="${properties}"/>
+	</copy>
+  </target>
+</project>

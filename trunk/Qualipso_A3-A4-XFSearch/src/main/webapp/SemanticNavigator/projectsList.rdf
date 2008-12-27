@@ -1,0 +1,14 @@
+<rdf:RDF
+    xmlns:j.0="http://usefulinc.com/ns/doap#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#" > 
+  <rdf:Description rdf:about="http://www.qualipso.org/projects/qualipso/a4/advdoc">
+    <j.0:wiki>http://www.qualipso.org/a4/advdoc/wiki</j.0:wiki>
+    <j.0:release>173238ec:119517c0382:-7fe3</j.0:release>
+    <j.0:homepage>http://www.qualipso.org/a4/advdoc</j.0:homepage>
+    <rdf:type rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+  </rdf:Description>
+</rdf:RDF>

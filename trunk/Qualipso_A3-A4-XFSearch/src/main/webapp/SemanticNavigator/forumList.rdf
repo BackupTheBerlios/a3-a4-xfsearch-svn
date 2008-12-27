@@ -1,0 +1,15 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#" > 
+  <rdf:Description rdf:about="http://www.qualipso.org/a4/advdoc/forum#000001">
+    <sioc:content></sioc:content>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#Thread"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.qualipso.org/a4/advdoc/forum#000002">
+    <sioc:content></sioc:content>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#Thread"/>
+  </rdf:Description>
+</rdf:RDF>

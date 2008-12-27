@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+    <title>QualiPSo A4 Knowledge Board</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+                    
+    <link type="text/css" rel="stylesheet" href="./yui/fonts/fonts.css">
+    <link type="text/css" rel="stylesheet" href="./yui/reset/reset.css">
+
+    <script type="text/javascript" src="./yui/yahoo/yahoo.js"></script>
+    <script type="text/javascript" src="./yui/event/event.js"></script>
+    <script type="text/javascript" src="./yui/dom/dom.js"></script>
+    <script type="text/javascript" src="./yui/dragdrop/dragdrop.js"></script>
+    <script type="text/javascript" src="./yui/connection/connection-min.js"></script>
+    <script type="text/javascript" src="./yui/animation/animation.js"></script>
+    <script type="text/javascript" src="./yui/treeview/treeview.js"></script>
+    <script type="text/javascript" src="./yui/container/container.js"></script>
+    <script type="text/javascript" src="./yui/yahoo-dom-event/yahoo-dom-event.js"></script>
+ 
+     
+    
+    <!-- My javascript-->
+    <script type="text/javascript" src="./knowledgeboard.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="./yui/treeview/assets/treeview.css">
+    <link type="text/css" rel="stylesheet" href="./yui/container/assets/container.css">
+  
+   <!-- Plugins -->
+   <script type="text/javascript" src=plugins/mailListPlugin.js></script>
+   <script type="text/javascript" src=plugins/peoplePlugin.js></script>
+   <script type="text/javascript" src=plugins/forumPlugin.js></script>
+   <script type="text/javascript" src=plugins/bugsPlugin.js></script>
+   <script type="text/javascript" src=plugins/projectsPlugin.js></script>
+
+
+    <style>
+        body { background:#FFF }
+        .yui-panel-container.focused .hd { background-color:grey; }
+    </style>
+
+	</head>
+<body>
+
+<!--
+Logo
+-->
+ <div id=logo>
+	<img src="img/logo-qualipso.png" alt="Qualipso Logo" width="500" height="100"/>
+ </div>
+	
+<!--
+        Main GUI
+-->
+
+    <div id="panelTools" style="border: 2px solid rgb(0, 0, 0);background:#eee;">
+        <button id="showProjects">Projects List</button>
+        <button id="showProjectDOAP">Project Info</button> 
+<!--        <button id="showProjectML">Project Mailing List</button>  -->
+	<input id="showProjectMLListPosts" type="button" value="Project Mailing List"/>
+        <button id="showProjectMLPost">Email</button>      
+        <button id="showPeople">People</button>
+        <button id="showPerson">Person</button>
+        <button id="showForumListThreads">Forum List Threads</button>
+        <button id="showForumThread">Thread</button>
+        <button id="showBugsList">Bugs List</button>
+        <button id="showBugInfo">Bug Info</button>
+        <!-- <button id="showGoogleMap">Google Map</button>   -->
+ 	<!-- <button id="showRSS">RSS</button>
+        <button id="showSPARQL">SPARQL</button>  -->
+    </div>
+ 
+
+    <!--
+    Mailing List panels
+    -->
+
+    <div id="panelProjectMLListPosts" style="overflow:auto;">
+        <div class="hd"></div>
+        <div class="bd"></div>
+        <div id="treeProjectMLListPosts"></div>
+        <div class="ft"></div>
+	
+    </div>
+    
+    <div id="panelProjectMLPost" style="overflow:auto;">
+    	<div class="hd"></div>
+	<div class="bd"></div>
+	<hr>
+	<div id="treeProjectMLContact"></div>
+        <div class="ft"></div>
+    </div>
+
+    <!--
+    People panels
+    -->
+
+    
+    <div id="panelPeople" style="overflow:auto;"> 
+	<div class="hd"></div> 
+	<div class="bd"></div> 
+        <div id="treePeople"></div>	    
+	<div class="ft"></div> 
+    </div>
+	
+    <div id="panelPerson" style="overflow:auto;"> 
+	<div class="hd"></div> 
+	<div class="bd"></div> 
+        <div id="treePerson"></div>	
+        <div id="treePersonProjects"></div>	 
+        <div id="treePersonInterests"></div>	               
+	<div class="ft"></div> 
+    </div>
+
+    <!--
+    Forum panels
+    -->
+
+    <div id="panelForumListThreads" style="overflow:auto;">
+        <div class="hd"></div>
+        <div class="bd"></div>
+        <div id="treeForumListThreads"></div>
+        <div class="ft"></div>
+    </div>
+    
+    <div id="panelForumThread" style="overflow:auto;">
+    	<div class="hd"></div>
+	<div class="bd"></div>
+	<div id="treeForumListPosts"></div>
+	<div class="ft"></div>
+    </div>
+   <div id="panelForumPostInfo" style="overflow:auto;">
+    	<div class="hd"></div>
+	<div class="bd"></div>
+	<div class="ft"></div>
+    </div>
+
+ 
+     <!--
+    Bugs panels
+    -->
+
+    <div id="panelBugsList" style="overflow:auto;">
+        <div class="hd"></div>
+        <div class="bd"></div>
+        <div id="treeBugsList"></div>
+        <div class="ft"></div>
+    </div>
+    
+    <div id="panelProjectBugInfo" style="overflow:auto;">
+	<div id="treeBugInfo></div>
+    	<div class="hd"></div>
+	<div class="bd"></div>
+    </div>
+
+
+    <div id="panelProjects" style="overflow:auto;"> 
+	    <div class="hd"></div> 
+	    <div class="bd"></div> 
+        <div id="treeProjects"></div>	    
+	    <div class="ft"></div> 
+	</div>     
+
+    <div id="panelProjectDOAP" style="overflow:auto;">
+        <div class="hd"></div>
+        <div class="bd"></div>
+        <div id="treeProjectDOAP"></div>
+        <div class="ft"></div>
+    </div>
+
+<!--
+    <div id="panelHTML" style="overflow:auto;">
+        <div class="hd"></div>
+        <div class="bd"></div>
+        <div class="ft"></div>
+    </div>
+    
+
+
+	
+	<div id="panelGoogleMap" style="overflow:auto;"> 
+	    <div class="hd"></div> 
+	    <div class="bd"></div>	  
+	      <div id="map" style="width: 300px; height: 250px"></div>
+	    <div class="ft">
+	</div>  
+-->
+
+<!--
+    <div id="panelSPARQL" style="width:300px;height:250px;overflow:auto;">
+        <div class="hd">SPARQL</div>
+        <div class="bd"></div>
+        <div id="panelSPARQLTree"></div>
+        <div class="ft">Testing SPARQL</div>
+    </div>
+    
+    <div id="panelRSS" style="width:500px;height:250px;overflow:auto;">
+        <div class="hd">RSS for project (RSS)</div>
+        <div class="bd"></div>
+        <div id="panelRSSTree"></div>
+        <div class="ft">End of RSS</div>
+    </div>
+-->
+
+       
+</body>
+</html>

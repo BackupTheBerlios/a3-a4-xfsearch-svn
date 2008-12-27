@@ -1,0 +1,88 @@
+<rdf:RDF
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#" > 
+  <rdf:Description rdf:about="http://www.tid.es/3015/quiles">
+    <foaf:mbox>mailto:quiles@tid.es</foaf:mbox>
+    <foaf:surname>Quiles</foaf:surname>
+    <foaf:firstName>Jose Antonio</foaf:firstName>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <sioc:email>mailto:quiles@tid.es</sioc:email>
+    <sioc:last_name>Quiles</sioc:last_name>
+    <sioc:name>Jose Antonio</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.urjc.es/escet/gsyc/acs">
+    <foaf:mbox>mailto:acs@gsyc.escet.urjc.es</foaf:mbox>
+    <foaf:surname>del Castillo</foaf:surname>
+    <foaf:firstName>Alvaro</foaf:firstName>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <sioc:email>mailto:acs@gsyc.escet.urjc.es</sioc:email>
+    <sioc:last_name>del Castillo</sioc:last_name>
+    <sioc:name>Alvaro</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.unisa.it/crmpa/nromano">
+    <foaf:mbox>mailto:nromano@crmpa.unisa.it</foaf:mbox>
+    <foaf:surname>Romano</foaf:surname>
+    <foaf:firstName>Nadia</foaf:firstName>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <sioc:email>mailto:nromano@crmpa.unisa.it</sioc:email>
+    <sioc:last_name>Romano</sioc:last_name>
+    <sioc:name>Nadia</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.tid.es/3015/mcp">
+    <foaf:mbox>mailto:mcp@tid.es</foaf:mbox>
+    <foaf:surname>Carrillo</foaf:surname>
+    <foaf:firstName>Miguel</foaf:firstName>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <sioc:email>mailto:mcp@tid.es</sioc:email>
+    <sioc:last_name>Carrillo</sioc:last_name>
+    <sioc:name>Miguel</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.tid.es/3015/dse">
+    <foaf:mbox>mailto:dse@tid.es</foaf:mbox>
+    <foaf:surname>Sanchez</foaf:surname>
+    <foaf:firstName>David</foaf:firstName>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <sioc:email>mailto:dse@tid.es</sioc:email>
+    <sioc:last_name>Sanchez</sioc:last_name>
+    <sioc:name>David</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.tid.es/3015/josea">
+    <foaf:mbox>mailto:josea@tid.es</foaf:mbox>
+    <foaf:surname>Alonso</foaf:surname>
+    <foaf:firstName>Jose Miguel</foaf:firstName>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <sioc:email>mailto:josea@tid.es</sioc:email>
+    <sioc:last_name>Alonso</sioc:last_name>
+    <sioc:name>Jose Miguel</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.unisa.it/rcost/lcerulo">
+    <foaf:mbox>mailto:lcerulo@unisannio.it</foaf:mbox>
+    <foaf:surname>Cerulo</foaf:surname>
+    <foaf:firstName>Luigi</foaf:firstName>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <sioc:email>mailto:lcerulo@unisannio.it</sioc:email>
+    <sioc:last_name>Cerulo</sioc:last_name>
+    <sioc:name>Luigi</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.urjc.es/escet/gsyc/janaya">
+    <foaf:mbox>mailto:janaya@gsyc.escet.urjc.es</foaf:mbox>
+    <foaf:surname>Anaya</foaf:surname>
+    <foaf:firstName>Julia</foaf:firstName>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <sioc:email>mailto:janaya@gsyc.escet.urjc.es</sioc:email>
+    <sioc:last_name>Anaya</sioc:last_name>
+    <sioc:name>Julia</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+</rdf:RDF>

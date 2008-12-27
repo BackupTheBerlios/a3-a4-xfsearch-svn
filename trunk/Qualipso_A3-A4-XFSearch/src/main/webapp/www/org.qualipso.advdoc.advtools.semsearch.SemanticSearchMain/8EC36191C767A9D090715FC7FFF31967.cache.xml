@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cache-entry>
+	<generated-type-hash class="org.qualipso.advdoc.advtools.semsearch.client.images.SemanticSearchImageBundle_generatedBundle" hash="1459C85466CD6633109D0402B05F17EB"/>
+	<generated-type-hash class="com.google.gwt.user.client.ui.TreeImages_generatedBundle" hash="C4DB9D53C840859028C6F483DB58A75C"/>
+	<generated-type-hash class="org.qualipso.advdoc.advtools.semsearch.client.images.DocumentTreeImageBundle_generatedBundle" hash="EA28191E4C32EA590F3CE31B3461D64A"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.TextBoxImpl" out="com.google.gwt.user.client.ui.impl.TextBoxImpl"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.ListBox.Impl" out="com.google.gwt.user.client.ui.ListBox.Impl"/>
+	<rebind-decision in="org.qualipso.advdoc.advtools.semsearch.client.images.DocumentTreeImageBundle" out="org.qualipso.advdoc.advtools.semsearch.client.images.DocumentTreeImageBundle_generatedBundle"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.FocusImpl" out="com.google.gwt.user.client.ui.impl.FocusImpl"/>
+	<rebind-decision in="com.google.gwt.xml.client.impl.XMLParserImpl" out="com.google.gwt.xml.client.impl.XMLParserImplStandard"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.ClippedImageImpl" out="com.google.gwt.user.client.ui.impl.ClippedImageImpl"/>
+	<rebind-decision in="com.google.gwt.user.client.impl.HistoryImpl" out="com.google.gwt.user.client.impl.HistoryImplMozilla"/>
+	<rebind-decision in="com.google.gwt.user.client.impl.DOMImpl" out="com.google.gwt.user.client.impl.DOMImplMozilla"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.PopupImpl" out="com.google.gwt.user.client.ui.impl.PopupImplMozilla"/>
+	<rebind-decision in="org.qualipso.advdoc.advtools.semsearch.client.SemanticSearchMain" out="org.qualipso.advdoc.advtools.semsearch.client.SemanticSearchMain"/>
+	<rebind-decision in="org.qualipso.advdoc.advtools.semsearch.client.debug.impl.DebugImpl" out="org.qualipso.advdoc.advtools.semsearch.client.debug.impl.DebugImpl"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.TreeImages" out="com.google.gwt.user.client.ui.TreeImages_generatedBundle"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.FormPanelImpl" out="com.google.gwt.user.client.ui.impl.FormPanelImpl"/>
+	<rebind-decision in="com.google.gwt.user.client.impl.HTTPRequestImpl" out="com.google.gwt.user.client.impl.HTTPRequestImpl"/>
+	<rebind-decision in="org.qualipso.advdoc.advtools.semsearch.client.images.SemanticSearchImageBundle" out="org.qualipso.advdoc.advtools.semsearch.client.images.SemanticSearchImageBundle_generatedBundle"/>
+</cache-entry>

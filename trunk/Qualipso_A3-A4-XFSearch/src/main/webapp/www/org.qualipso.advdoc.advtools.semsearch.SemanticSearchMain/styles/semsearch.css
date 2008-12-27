@@ -1,0 +1,218 @@
+
+/*
+	GENERAL STYLES
+ */
+ 
+body,td,input,select,a,div,.p{
+	font-family:arial,sans-serif;
+	font-size: 8pt;
+}
+div,td{color:#000000}
+a:link,.w,.w a:link{color:#0000cc}
+a:visited{color:#551a8b}
+a:active{color:#ff0000}
+
+/*
+	GWT WIDGETS STYLES
+ */
+
+.gwt-Button {
+	font-family:arial,sans-serif;
+	font-size: 8pt;
+}
+
+.gwt-DialogBox {
+  border: 2px outset;
+  background-color: white;
+}
+
+.gwt-DialogBox .Caption {
+  background-color: #fbe9b7;
+  padding: 3px;
+  margin: 2px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.gwt-ListBox .gwt-ListBoxItem-selected {
+	color: black;
+	background-color: #fbe9b7;
+}
+
+/*
+	SEMANTIC SEARCH STYLES
+ */
+
+.semsearch-ScrollPanel {
+	border: 1px solid DARKBLUE;
+	padding: 2px;
+}
+
+.semsearch-ShowDebugPanel {
+	/*display: none;*/
+}
+
+.semsearch-title1 {
+	font-weight: bold;
+	font-size: large;
+	background-color: #F6D435;
+	padding: 3px;
+}
+
+.semsearch-title2 {
+	font-weight: bold;
+	background-color: #F37835;
+	font-size: 10pt;
+}
+
+.semsearch-step {
+	font-weight: bold;
+	font-size: large;
+	padding: 3px;
+	background-color: #FFFFFF;
+	border: 1px;
+}
+
+.semsearch-suggestion {
+	background-color: #d8cea1;
+	color: black;
+	padding-top: 1px;
+	padding-bottom: 8px;
+	padding-left: 0px;
+	margin: 5px;
+}
+
+.semsearch-TreeItemSelected {
+	font-weight: normal;
+	color: #95aef4;
+}
+
+.semsearch-TreeItemUnselected {
+	font-weight: normal;
+	color: black;
+}
+
+.semsearch-TreeParentItemSelected {
+	font-weight: bold;
+	color: #333399;
+}
+
+.semsearch-TreeParentItemUnselected {
+	font-weight: bold;
+	color: black;
+}
+
+.semsearch-menuitem {
+	cursor: pointer;
+	font-family:arial,sans-serif;
+	font-size: 8pt;
+}
+
+.semsearch-clickable {
+	cursor: pointer;
+}
+
+.semsearch-link {
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+
+.semsearch-link-instance {
+	text-decoration: underline;
+	color: green;
+	cursor: pointer;
+}
+
+.semsearch-link-add {
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+
+.semsearch-link-remove {
+	text-decoration: underline;
+	color: red;
+	cursor: pointer;
+}
+
+.semsearch-editable-label {
+	color: green;
+	cursor: pointer;
+}
+
+.semsearch-menu {
+	background-color: #CCCCCC;
+}
+
+.semsearch-SearchResults-scrollpanel {
+	height: 300px;
+	border: 1px solid DARKBLUE;
+	padding: 2px;
+}
+
+.semsearch-SearchResultTable {
+	border-top: thin solid #666666;
+	border-left: thin solid #666666;
+	border-right: thin solid #000000;
+	border-bottom: thin solid #000000;
+	background-color:  #ffffff;
+}
+
+.semsearch-SearchResultTable-Header {
+	background-color:  #F6D435;
+	font-weight: bold;
+	color: black;
+	font-family:arial,sans-serif;
+	font-size: 12pt;	
+}
+
+.semsearch-SearchResultTable-EvenRows {
+	background-color:  #F8EDB9;
+	color: black;
+	font-family:arial,sans-serif;
+	font-size: 11pt;	
+}
+
+.semsearch-SearchResultTable-OddRows {
+	background-color:  #f8f4df;
+	color: black;
+	font-family:arial,sans-serif;
+	font-size: 11pt;	
+}
+
+.semsearch-exist-results {
+	color: green;
+	font-family:arial,sans-serif;
+	font-size: 10pt;	
+	font-weight: bold;
+	border-top: thin;
+}
+
+.semsearch-not-exist-results {
+	color: red;
+	font-family:arial,sans-serif;
+	font-size: 10pt;	
+	font-weight: bold;
+	border-top: thin;
+}
+
+/*
+ * IMAGE LIST
+ */
+
+.semsearch-imagelist-unselected {
+	background-color: #ffffff;
+	color: black;
+	font-family:arial,sans-serif;
+	font-size: 10pt;	
+	font-weight: normal;
+}
+
+.semsearch-imagelist-selected {
+	background-color: #316ac5;
+	color: white;
+	font-family:arial,sans-serif;
+	font-size: 10pt;	
+	font-weight: bold;
+}

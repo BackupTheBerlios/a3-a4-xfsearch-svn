@@ -1,0 +1,789 @@
+<rdf:RDF
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:qrs="http://www.qualipso.org/ontology/doc/qualipso_relationship#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:qsc="http://www.qualipso.org/ontology/doc/qualipso_source_code#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:qdoc="http://www.qualipso.org/ontology/doc/qualipso_documentation#"
+    xmlns:baetle="http://xmlns.com/baetle/#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:qml="http://www.qualipso.org/ontology/doc/qualipso_maillinglist#" > 
+  <rdf:Description rdf:about="http://contact/martin.pitt@ubuntu.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name>Martin Pitt</sioc:name>
+    <sioc:last_name>Martin Pitt</sioc:last_name>
+    <sioc:email>martin.pitt@ubuntu.com</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/lists@janc.be">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name>Jan Claeys</sioc:name>
+    <sioc:last_name>Jan Claeys</sioc:last_name>
+    <sioc:email>lists@janc.be</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/dufresnep@fastmail.fm">
+    <sioc:email>dufresnep@fastmail.fm</sioc:email>
+    <sioc:last_name>Paul Dufresne</sioc:last_name>
+    <sioc:name>Paul Dufresne</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:1165918273.14629.7.camel">
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+    <qml:from>ogra@ubuntu.com</qml:from>
+    <sioc:has_parent>&lt;20061212082235.GB6072@piware.de&gt;</sioc:has_parent>
+    <sioc:id>&lt;1165918273.14629.7.camel@edubuntu&gt;</sioc:id>
+    <sioc:modified_at>2006-12-12T11:11:13</sioc:modified_at>
+    <sioc:content>hi,
+Am Dienstag, den 12.12.2006, 09:22 +0100 schrieb Martin Pitt:
+
+&gt;  - Non-admins will see icons for fixed hard disk partitions, too,
+&gt;    although they cannot mount them. This is because the visibility of
+&gt;    those are determined by hal, so they are global. If it's too
+&gt;    annoying, I can patch gnome-vfs to hide them for non-admins
+i would bind visibility to mountability, like we did for ltspfs, else
+the user expects to be able to access what she has on the desktop but
+cant, lets not create frustration for our users.
+
+ciao
+	oli</sioc:content>
+    <sioc:subject>Re: New feature: mount local file systems in Gnome, please test</sioc:subject>
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/sistpoty@ubuntu.com">
+    <sioc:email>sistpoty@ubuntu.com</sioc:email>
+    <sioc:last_name>Stefan Potyra</sioc:last_name>
+    <sioc:name>Stefan Potyra</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/nigelenki@comcast.net">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name>John Richard Moser</sioc:name>
+    <sioc:last_name>John Richard Moser</sioc:last_name>
+    <sioc:email>nigelenki@comcast.net</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:1165980711.31136.280201425">
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+    <qml:from>dufresnep@fastmail.fm</qml:from>
+    <sioc:id>&lt;1165980711.31136.280201425@webmail.messagingengine.com&gt;</sioc:id>
+    <sioc:modified_at>2006-12-13T04:31:51</sioc:modified_at>
+    <sioc:content>Guess the simplest is to copy paste basic information for the new spec.
+URL: https://wiki.ubuntu.com/HandleNicelyLowDiskSpace?action=show
+
+Summary:
+This specification describe how to make new programs that behave more
+consistently when lacking or
+coming close to lack disk space, and how to make existing programs that
+do not handle lack of disk
+space to behave better.
+
+Rationale:
+Many programmers did not took time to decide how to test and react when
+their programs come to use
+a hard disk with low disk space, mostly because their is no easy way to
+handle this, and because it
+is perceived as not much likely to happen. Bug #22842 (Many programs
+misbehave when running out of
+disk space) have convinced me that a specification should be written, as
+the way to handle this is
+not obvious, and discussion is needed.
+
+This was my first try at writing a specification, and I do not feel
+fully at ease with it.
+In fact, I did not registered it in Launchpad yet, and would be more
+than happy to see some
+developper appropriate it and registering it if he/she feels so.
+
+I made a suggestion of design, but I only wish people to begin
+discussing it, and give
+better ideas if they feel so.
+
+-- 
+http://www.fastmail.fm - Accessible with your email software
+                          or over the web</sioc:content>
+    <sioc:subject>a new low-disk space handling specification</sioc:subject>
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/ubuntu-motu@lists.ubuntu.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name></sioc:name>
+    <sioc:last_name></sioc:last_name>
+    <sioc:email>ubuntu-motu@lists.ubuntu.com</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:4583AE06.8030701">
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+    <sioc:subject>Re: Missing Documentation / Help Requests</sioc:subject>
+    <sioc:content>Freddy Martinez wrote:
+&gt; I've been searching for support for a sound issue. Basically, I have a
+&gt; TV tuner blocking my sound card output so I can't even get "aplay -l" to
+&gt; give me output. I know this is the problem. I have had problems with
+&gt; hardware recognition and in editable get lead to this page.
+&gt; https://help.ubuntu.com/community/DebuggingHardwareDetection . The
+&gt; difficult thing is that this page doesn't exist . I am probably not the
+&gt; first user with this issue and in the past have been able to get help
+&gt; from some great developers. Unfortunately, developers don't have time to
+&gt; help every user with hardware problems. The IRC channel was not much
+&gt; help either. I will try the forums as well, but I thought I would bring
+&gt; this missing page to the teams' attention.
+&gt; Thanks for your time!
+&gt; -- 
+&gt; -Freddy Martinez-
+&gt; Kubuntu. GNU / Linux for human beings.
+&gt; www.chi.ubuntu-us.org &lt;http://www.chi.ubuntu-us.org&gt;
+&gt; &lt;/message&gt;
+&gt; 
+Hi,
+
+Try this one: https://wiki.ubuntu.com/DebuggingHardwareDetection -it
+doesn't have much information though. Like any other Debugging*
+documentation, it specifies just what info to provide in a bug report
+regarding hardware...
+
+hmm, the DebuggingProcedures in h.u.c seems to be imported to w.u.c again.
+
+PS. CC'd ubuntu-devel-discuss instead of ubuntu-devel
+
+-- 
+Please scan all attachments for viruses.
+Or (though you might like Rodin) you might as well avoid "The Gates of
+Hell" and use Linux.</sioc:content>
+    <sioc:modified_at>2006-12-16T09:27:50</sioc:modified_at>
+    <sioc:id>&lt;4583AE06.8030701@gmail.com&gt;</sioc:id>
+    <sioc:has_parent>&lt;d854a83a0612152329s110aa2d6l4f8b3007d01555ed@mail.gmail.com&gt;</sioc:has_parent>
+    <qml:from>towsonu2003@gmail.com</qml:from>
+    <qml:to>freddymartinez9@gmail.com</qml:to>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:1165855281.31998.26.camel">
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+    <sioc:subject>Re: Concerns</sioc:subject>
+    <sioc:content>[Sent to the new ubuntu-devel-discuss list, to keep the noise level on
+ubuntu-devel low, and this isn't really a core development issue]
+
+Op zaterdag 09-12-2006 om 12:48 uur [tijdzone -0500], schreef Evan
+Hazlett:
+&gt; i am evan hazlett, and the creator of a project called
+&gt; "Reconstructor".  I have had growing concerns with some unintentional
+&gt; effects it has caused.  I will briefly describe what it does.
+&gt; Reconstructor allows the customization (usplash, gnome, software,
+&gt; etc.) of the Ubuntu Live CD.  I originally created it because I had a
+&gt; standard set of software and settings that I didn't like to
+&gt; reconfigure for every machine when I reinstalled Ubuntu.  The concerns
+&gt; I have is there are some people that are using it to create their own
+&gt; distros (although most are no more than ubuntu with some extra
+&gt; software and artwork) and are offering them for download.
+&gt; 
+&gt; I wanted to get the thoughts from the ubuntu developers on this.  I'm
+&gt; sure some of you have heard of Reconstructor and probably even seen
+&gt; some of the projects i mentioned.  I do NOT want to take away from the
+&gt; ubuntu community in any way, shape, or form, and i feel my project
+&gt; could cause some problems if not used as suggested (personal
+&gt; customization). 
+
+I'm not a developer, but as a community member, I think there isn't
+really a problem with other distros based on Ubuntu, as long as they
+don't include Troyan horses or do other similarly harmful things.
+E.g. I know that some LoCoTeams have made their own customized CDs, to
+include translations that are not on the official CD.
+
+
+-- 
+Jan Claeys</sioc:content>
+    <sioc:modified_at>2006-12-11T17:41:21</sioc:modified_at>
+    <sioc:id>&lt;1165855281.31998.26.camel@localhost&gt;</sioc:id>
+    <sioc:has_parent>&lt;a91153460612090948w1efd4a12m71b71aaaa783253e@mail.gmail.com&gt;</sioc:has_parent>
+    <qml:from>lists@janc.be</qml:from>
+    <qml:to>ejhazlett@gmail.com</qml:to>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/ogra@ubuntu.com">
+    <sioc:email>ogra@ubuntu.com</sioc:email>
+    <sioc:last_name>Oliver Grawert</sioc:last_name>
+    <sioc:name>Oliver Grawert</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:20061211131331.GA24466">
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+    <sioc:subject>Re: howto add a new vcs to /dev/</sioc:subject>
+    <sioc:content>[Redirecting to ubuntu-devel-discuss; please respect Mail-Followup-To]
+
+On Wed, Dec 06, 2006 at 04:47:53PM +0800, jacky wrote:
+&gt; When ubuntu alternate CD boot up, it create only 4 vcs
+&gt; device in /dev. I wanto to add a new vcs device, how
+&gt; to do that?
+
+Edit src/lib/debian-installer/init-udev-devices in the rootskel source
+package to create more device nodes, and src/etc/inittab to put
+something on them (e.g. another shell).
+
+Paul Sladen's response assumed a regular system, whereas I think you're
+actually talking about the installer environment.
+
+Cheers,
+
+-- 
+Colin Watson                                       [cjwatson@ubuntu.com]</sioc:content>
+    <sioc:modified_at>2006-12-11T14:13:31</sioc:modified_at>
+    <sioc:id>&lt;20061211131331.GA24466@riva.ucam.org&gt;</sioc:id>
+    <sioc:has_parent>&lt;500578.40955.qm@web15602.mail.cnb.yahoo.com&gt;</sioc:has_parent>
+    <qml:from>cjwatson@ubuntu.com</qml:from>
+    <qml:to>ubuntu-devel@lists.ubuntu.com</qml:to>
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/ubuntu-devel@lists.ubuntu.com">
+    <sioc:name>Ubuntu Development</sioc:name>
+    <sioc:last_name>Ubuntu Development</sioc:last_name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <qml:from_fullname></qml:from_fullname>
+    <qml:from_address>ubuntu-devel@lists.ubuntu.com</qml:from_address>
+    <sioc:email>ubuntu-devel@lists.ubuntu.com</sioc:email>
+    <sioc:last_name></sioc:last_name>
+    <sioc:name></sioc:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:457AE41D.2060607">
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+    <qml:from>matt.kuiken@verizon.net</qml:from>
+    <sioc:id>&lt;457AE41D.2060607@verizon.net&gt;</sioc:id>
+    <sioc:modified_at>2006-12-09T17:28:13</sioc:modified_at>
+    <sioc:content>I have requested that this list be added to gmane as 
+gmane.linux.ubuntu.devel.discuss.  I look forward to reading and 
+participating in interesting discussions in this list in the future.
+
+-Matt</sioc:content>
+    <sioc:subject>gmane request.</sioc:subject>
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/psusi@cfl.rr.com">
+    <sioc:email>psusi@cfl.rr.com</sioc:email>
+    <sioc:last_name>Phillip Susi</sioc:last_name>
+    <sioc:name>Phillip Susi</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:200612152335.34584.sistpoty">
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+    <qml:from>sistpoty@ubuntu.com</qml:from>
+    <sioc:has_parent>&lt;1166220984.18465.6.camel@lovegood&gt;</sioc:has_parent>
+    <sioc:id>&lt;200612152335.34584.sistpoty@ubuntu.com&gt;</sioc:id>
+    <sioc:modified_at>2006-12-15T23:35:32</sioc:modified_at>
+    <sioc:content>Hi,
+
+Am Freitag 15 Dezember 2006 23:16 schrieb Daniel Holbach:
+&gt; Hello everybody
+&gt;
+&gt; during our last MOTU meeting we decided to stick to the same dates as in
+&gt; main (cf https://wiki.ubuntu.com/FeistyReleaseSchedule), but to add
+&gt; another week after Feature Freeze for the inclusion of NEW packages.
+&gt;
+&gt; If there are any objections, please discuss.
+
+hm... I think one week might be a little bit too few. Maybe we could set FF to 
+something like March 1st. 1 1/2 month should imo still suffice to get the 
+shape of universe right.
+
+Other opinions?
+
+Cheers,
+    Stefan.</sioc:content>
+    <sioc:subject>Re: Universe Freezes</sioc:subject>
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/ubuntu-devel-discuss@lists.ubuntu.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <qml:from_fullname></qml:from_fullname>
+    <qml:from_address>ubuntu-devel-discuss@lists.ubuntu.com</qml:from_address>
+    <sioc:email>ubuntu-devel-discuss@lists.ubuntu.com</sioc:email>
+    <sioc:last_name></sioc:last_name>
+    <sioc:name></sioc:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/towsonu2003@gmail.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name>t u</sioc:name>
+    <sioc:last_name>t u</sioc:last_name>
+    <sioc:email>towsonu2003@gmail.com</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/cjwatson@ubuntu.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <qml:from_fullname>Colin Watson</qml:from_fullname>
+    <qml:from_address>cjwatson@ubuntu.com</qml:from_address>
+    <sioc:email>cjwatson@ubuntu.com</sioc:email>
+    <sioc:last_name>Colin Watson</sioc:last_name>
+    <sioc:name>Colin Watson</sioc:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/daniel.holbach@ubuntu.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name>Daniel Holbach</sioc:name>
+    <sioc:last_name>Daniel Holbach</sioc:last_name>
+    <sioc:email>daniel.holbach@ubuntu.com</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:6fd1a2d60612160201v29d44a0cn4384b7d90c35b7da">
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+    <qml:from>idokibovito@googlemail.com</qml:from>
+    <sioc:has_parent>&lt;6fd1a2d60612091429g14365e24h335035f44aae47c6@mail.gmail.com&gt;</sioc:has_parent>
+    <sioc:id>&lt;6fd1a2d60612160201v29d44a0cn4384b7d90c35b7da@mail.gmail.com&gt;</sioc:id>
+    <sioc:modified_at>2006-12-16T11:01:56</sioc:modified_at>
+    <sioc:content>Hi,
+
+I am trying to help a little with IRDA to work in feisty out of the box. To
+be able to beam files between my computer and my cell phone I only need to
+do in edgy:
+
+1. apt-get install irda-utils
+2. edit /etc/default/irda-utils and set ENABLED="true" (it's false by
+default)
+3. restart the system (sounds stupid but restarting irda-utils didn't help,
+maybe it can be broken down to reloading a module or so)
+4. install irda-tray which is a systray app to send/recieve files (not in
+ubuntu yet, I'm working on the package right now)
+
+it being so simple to get it working, I suggest to move irda-utils in
+ubuntu-desktop, and with a packaged irda-tray, the user only needs to enable
+irda in the config. We talked about this in the Ubuntu Open Week and it has
+been suggested I contact the list for this.
+
+It would be a first step IMHO, bluetooth is already getting some love, let
+IRDA get some aswell.
+
+Let me know what you think,
+
+Best regards,
+amnesia</sioc:content>
+    <sioc:subject>Moving irda-utils to ubuntu-desktop?</sioc:subject>
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:b9fadc470612130820i4c52771ax5e602835e4061754">
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+    <sioc:subject>Re: New feature: zeroconf networking by default, please test</sioc:subject>
+    <sioc:content>On 12/13/06, Martin Pitt &lt;martin.pitt@ubuntu.com&gt; wrote:
+&gt; Hi all!
+&gt;
+&gt; Yesterday, the remaining bits of the "Zero-configuration networking"
+&gt; specification made their way to the archive and await hordes of fans,
+&gt; happy users, and of course, bug reports.
+&gt;
+&gt; The basic idea is that whenever you try to connect to a network and do
+&gt; not get a DHCP response, you will automatically get an IP from the
+&gt; 169.254.0.0/16 range (called 'IPv4 link-layer address'). If other
+&gt; laptops in the room do the same, they negotiate IP addresses to avoid
+&gt; conflicts. Thus every computer is in the same IP network and they can
+&gt; communicate with each other.
+&gt;
+&gt; Thanks to nss-mdns (which is now also active by default), you can even
+&gt; talk to them by their hostnames in the '.local' DNS domain (e. g.
+&gt; 'ping joes_laptop.local').
+&gt;
+&gt; You can easily build such a network with a crossover ethernet cable
+&gt; between two machines or creating a new Wireless network in Network
+&gt; Manager. Both statically configured DHCP network interfaces (i. e.
+&gt; ifupdown, /etc/network/interfaces) and dynamically configured ones
+&gt; (i. e. Network Manager) have been taught to use this new feature.
+&gt;
+&gt; You can also manually configure an ethernet interface to use this new
+&gt; method exclusively in the Gnome network administration tool. However,
+&gt; this is not the common use case.
+&gt;
+&gt; This feature provides the basis for the more exciting features like
+&gt; automatic network service discovery. We now enable Avahi in the
+&gt; default installation, thus you will automatically see resources shared
+&gt; by other network computers, such as Music (if you have rhythmbox open
+&gt; and enabled sharing of your files), files (if you use
+&gt; gnome-user-share), available web servers (if you configure
+&gt; libapache2-mod-dnssd), and so on. The tools 'avahi-discover' or
+&gt; 'service-discovery-applet' will show you a list of computers and
+&gt; resources that are available in the local network.
+&gt;
+&gt; I appreciate testing and feedback, in the form of bug reports or
+&gt; replies to this mail.
+&gt;
+&gt; Thanks and enjoy,
+&gt;
+&gt; Martin
+&gt;
+&gt; [1] https://wiki.ubuntu.com/ZeroConfNetworking
+&gt;
+&gt; --
+&gt; Martin Pitt        http://www.piware.de
+&gt; Ubuntu Developer   http://www.ubuntu.com
+&gt; Debian Developer   http://www.debian.org
+&gt;
+&gt;
+&gt; -----BEGIN PGP SIGNATURE-----
+&gt; Version: GnuPG v1.4.6 (GNU/Linux)
+&gt;
+&gt; iD8DBQFFgB4SDecnbV4Fd/IRAnsUAJ9IVSwc94Mt4W0dYCEdgwRQEqKhwQCfZ9pA
+&gt; Sc7c/pkSptf4I7bilkxs4SM=
+&gt; =03EW
+&gt; -----END PGP SIGNATURE-----
+&gt;
+&gt;
+&gt; --
+&gt; ubuntu-devel mailing list
+&gt; ubuntu-devel@lists.ubuntu.com
+&gt; Modify settings or unsubscribe at: https://lists.ubuntu.com/mailman/listinfo/ubuntu-devel
+&gt;
+&gt;
+&gt;
+
+This is all coming out together!! I think Feisty will really ROCK hard!!
+
+--</sioc:content>
+    <sioc:modified_at>2006-12-13T17:20:42</sioc:modified_at>
+    <sioc:id>&lt;b9fadc470612130820i4c52771ax5e602835e4061754@mail.gmail.com&gt;</sioc:id>
+    <sioc:has_parent>&lt;20061213153650.GB14077@piware.de&gt;</sioc:has_parent>
+    <qml:from>joelbryan.juliano@gmail.com</qml:from>
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+    <qml:to>ubuntu-devel@lists.ubuntu.com</qml:to>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/idokibovito@googlemail.com">
+    <sioc:email>idokibovito@googlemail.com</sioc:email>
+    <sioc:last_name>ido kibovito</sioc:last_name>
+    <sioc:name>ido kibovito</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/joelbryan.juliano@gmail.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name>Joel Bryan Juliano</sioc:name>
+    <sioc:last_name>Joel Bryan Juliano</sioc:last_name>
+    <sioc:email>joelbryan.juliano@gmail.com</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:457B1BCE.8050704">
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+    <sioc:subject>Re: NX bit broken on 32-bit</sioc:subject>
+    <sioc:content>-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+  [Re-posting then, since apparently the target list moved]
+
+It seems the NX bit doesn't work on 32-bit Ubuntu, as per bug #75157
+
+https://bugs.launchpad.net/distros/ubuntu/+bug/75157
+
+Apparently, the requirement for this is PAE; which in turn means 64G
+high memory support.
+
+On newer 32-bit and 64-bit systems, the NX bit presents a way to
+properly enforce non-executable memory.  This allows the stack, heap,
+program and library data, and anonymous mappings to be non-executable,
+even in 32-bit mode.  Doing this helps keep memory in a safe state and
+prevent the exploitation of security vulnerabilites triggered by buffer
+overflows and double-free()s.
+
+Apparently, Ubuntu hasn't had this for quite a while.  I tested as far
+back as Dapper; no such luck.  Bugs #49192 and #49283 specifically fix
+non-executable stacks to enhance security; apparently these fixes are
+wholly ineffective at this time.
+
+In order to take advantage of the security improvements offered by the
+NX bit in modern computers, the x86 generic kernel needs to have PAE
+enabled.  Without this, users are being left more open to attacks from
+unpatched vulnerabilities.
+
+- --
+    We will enslave their women, eat their children and rape their
+    cattle!
+                  -- Bosc, Evil alien overlord from the fifth dimension
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.5 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iQIVAwUBRXsbzQs1xW0HCTEFAQIXcg//ZI1Bk0jzMYk1GRibRhzY4XgCgb2/jj6f
+g/61wbQgvOLw4GbQpTh0kRf4Bkn1zTAxTHP7iHdGIIsqDDkAhTTcKrvloGLP8IN/
+WDBhYvsiOufYpMA9FbMVW1gwNU5lv/vGIoHph8W8OcFcQK8IGBZVfelO+Nq9F1yJ
+CmhoGFfK1+3bdqtLDMVQV9USaOoUfMExwoS27i+ijCauYShB9szxDeY8DqAD+99N
+7Y/4+WrKaaM1vAESu+AuDS/Dv4Yy+2bLJZhFsa2E7JfCaCowiXHchS3h91Ju8vx/
+BpER+jbXa6sFOLRBhG6ONri0NomuZrQgu4RB7IyvHAcEB/xn9OAIiG8LwyNohf5i
+jZTHjWtFu+kNJjp2aPKL1GvhJH8i8xhfbBxMh++M6nbZWy2c79JowRBFJKF3TA/s
+lbWXVNsJyT37SfAr+Lm7OyR2rgdWEXrS+zItlGTRAh4+g4XyaCmlvv28wiAK1l9z
+C0/DUOQm4ce1dV6gYv0tutWzXoJQGEjpj/gx7Cc1K79qZsK22fBk55m0ckEnaJl0
+j+1vvRNiKwQ26x/PItXT2qXg39g5y7vjAbVJyQC2ev+iZBp1/ZwI92RyQA26NaFj
+uKNwGrio59QOFoL1Nku9Q2/7ifB87c5xKNBUNJJzjH+AQ9j/L2n/08SJF87K444Y
+hmtkgY0U0Oo=
+=yKRb
+-----END PGP SIGNATURE-----</sioc:content>
+    <sioc:modified_at>2006-12-09T21:25:50</sioc:modified_at>
+    <sioc:id>&lt;457B1BCE.8050704@comcast.net&gt;</sioc:id>
+    <sioc:has_parent>&lt;457B1842.3050301@comcast.net&gt;</sioc:has_parent>
+    <qml:from>nigelenki@comcast.net</qml:from>
+    <qml:cc>nigelenki@comcast.net</qml:cc>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/ejhazlett@gmail.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name>Evan Hazlett</sioc:name>
+    <sioc:last_name>Evan Hazlett</sioc:last_name>
+    <sioc:email>ejhazlett@gmail.com</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/ernstp@gmail.com">
+    <sioc:email>ernstp@gmail.com</sioc:email>
+    <sioc:last_name>Ernst Persson</sioc:last_name>
+    <sioc:name>Ernst Persson</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:em169h$11r$1">
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+    <sioc:subject>Re: New feature: mount local file systems in Gnome, please test</sioc:subject>
+    <sioc:content>Martin Pitt wrote:
+
+&gt; as specified for feisty [1] we want to handle spare fixed hard disk
+&gt; partitions in a similarly easy way as we handle removable drives.
+&gt; [...]
+&gt; 
+&gt; I welcome any testing feedback (to ubuntu-devel-discuss@ or as bug
+&gt; reports against gnome-mount or hal).
+
+It works as expected. However, I get the label "51.7 GB Volume" instead 
+of something like "hda1". When I mount the volume, the name shows as 
+"51.7 GB Volume: _", and it is mounted under /media/_.
+
+This feels a little uncomfortable. Where are you getting the underscore 
+from? How will a second partition be named? Is it possible for the user 
+to name a partition, if you (as a developer) don't want to confront 
+users with "hda1" etc?
+
+Anyway, thanks for this little feature! I like that I now can 
+mount/unmount fixed drive partitions with the GUI.
+
+Regards,
+
+Andreas</sioc:content>
+    <sioc:modified_at>2006-12-16T17:18:57</sioc:modified_at>
+    <sioc:id>&lt;em169h$11r$1@sea.gmane.org&gt;</sioc:id>
+    <sioc:has_parent>&lt;20061212082235.GB6072@piware.de&gt;</sioc:has_parent>
+    <qml:from>andreas@schildbach.de</qml:from>
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/freddymartinez9@gmail.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name>Freddy Martinez</sioc:name>
+    <sioc:last_name>Freddy Martinez</sioc:last_name>
+    <sioc:email>freddymartinez9@gmail.com</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:8e2e399f0612120346h49c75232je3b9f4bdfcdddc6">
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+    <sioc:subject>Re: New feature: mount local file systems in Gnome, please test</sioc:subject>
+    <sioc:content>But wait, what's this then?
+
+http://gitweb.freedesktop.org/?p=hal.git;a=commit;h=2ea340399bf8cf3d2bb6bd1b5c4ecbc2042e93d4
+
+http://lists.freedesktop.org/archives/hal/2006-October/006308.html
+
+Seems David Zeuthen from RedHat has already worked on this. I'm not sure if
+his patch has made it into any HAL release yet though?
+
+BR
+/Ernst Persson
+
+On 12/12/06, Martin Pitt &lt;martin.pitt@ubuntu.com&gt; wrote:
+
+&gt; &gt; Could this be extended so that usermounted fuse mounts show up there
+&gt; also?
+&gt; &gt; If I mount an ISO with fuse-iso somewhere in my home directory for
+&gt; example.
+&gt;
+&gt; This would require FUSE support in hal, which is on upstream's
+&gt; wishlist, but not currently implemented.
+&gt;</sioc:content>
+    <sioc:modified_at>2006-12-12T12:46:30</sioc:modified_at>
+    <sioc:id>&lt;8e2e399f0612120346h49c75232je3b9f4bdfcdddc6@mail.gmail.com&gt;</sioc:id>
+    <sioc:has_parent>&lt;20061212082235.GB6072@piware.de&gt;
+	&lt;8e2e399f0612120046r20f54f61m49cd14c301109d0e@mail.gmail.com&gt;
+	&lt;8e2e399f0612120054u7939bd17q9f0e28dc51fee29e@mail.gmail.com&gt;
+	&lt;20061212092547.GD6072@piware.de&gt;</sioc:has_parent>
+    <qml:from>ernstp@gmail.com</qml:from>
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:1166220984.18465.6.camel">
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+    <sioc:subject>Universe Freezes</sioc:subject>
+    <sioc:content>Hello everybody
+
+during our last MOTU meeting we decided to stick to the same dates as in
+main (cf https://wiki.ubuntu.com/FeistyReleaseSchedule), but to add
+another week after Feature Freeze for the inclusion of NEW packages.
+
+If there are any objections, please discuss.
+
+Have a nice day,
+ Daniel</sioc:content>
+    <sioc:modified_at>2006-12-15T23:16:24</sioc:modified_at>
+    <sioc:id>&lt;1166220984.18465.6.camel@lovegood&gt;</sioc:id>
+    <qml:from>daniel.holbach@ubuntu.com</qml:from>
+    <qml:to>ubuntu-motu@lists.ubuntu.com</qml:to>
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+    <qml:to>tfheen@ubuntu.com</qml:to>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:20061212092547.GD6072">
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+    <sioc:subject>Re: New feature: mount local file systems in Gnome, please test</sioc:subject>
+    <sioc:content>Hi Ernst,
+
+Ernst Persson [2006-12-12  9:54 +0100]:
+&gt; this sounds great! I assume it's both the desktop and gtk's filechooser that
+&gt; are affected?
+
+Right, the visibility change was just made in hal, which automatically
+propagates through gnome-vfs to the desktop, computer place, file
+chooser, etc.
+
+&gt; Could this be extended so that usermounted fuse mounts show up there also?
+&gt; If I mount an ISO with fuse-iso somewhere in my home directory for example.
+
+This would require FUSE support in hal, which is on upstream's
+wishlist, but not currently implemented.
+
+pitti
+
+-- 
+Martin Pitt        http://www.piware.de
+Ubuntu Developer   http://www.ubuntu.com
+Debian Developer   http://www.debian.org
+
+Software is like sex -- it's better when it's free! [Linus Torvalds]</sioc:content>
+    <sioc:modified_at>2006-12-12T10:25:47</sioc:modified_at>
+    <sioc:id>&lt;20061212092547.GD6072@piware.de&gt;</sioc:id>
+    <sioc:has_parent>&lt;20061212082235.GB6072@piware.de&gt;
+	&lt;8e2e399f0612120046r20f54f61m49cd14c301109d0e@mail.gmail.com&gt;
+	&lt;8e2e399f0612120054u7939bd17q9f0e28dc51fee29e@mail.gmail.com&gt;</sioc:has_parent>
+    <qml:from>martin.pitt@ubuntu.com</qml:from>
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:8e2e399f0612120054u7939bd17q9f0e28dc51fee29e">
+    <qml:to>ubuntu-devel-discuss@lists.ubuntu.com</qml:to>
+    <qml:from>ernstp@gmail.com</qml:from>
+    <sioc:has_parent>&lt;20061212082235.GB6072@piware.de&gt;
+	&lt;8e2e399f0612120046r20f54f61m49cd14c301109d0e@mail.gmail.com&gt;</sioc:has_parent>
+    <sioc:id>&lt;8e2e399f0612120054u7939bd17q9f0e28dc51fee29e@mail.gmail.com&gt;</sioc:id>
+    <sioc:modified_at>2006-12-12T09:54:16</sioc:modified_at>
+    <sioc:content>(Oh, there's a new mailing list!)
+Hi Martin,
+
+this sounds great! I assume it's both the desktop and gtk's filechooser that
+are affected?
+
+Could this be extended so that usermounted fuse mounts show up there also?
+If I mount an ISO with fuse-iso somewhere in my home directory for example.
+
+BR
+/Ernst Persson
+
+On 12/12/06, Martin Pitt &lt;martin.pitt@ubuntu.com&gt; wrote:
+
+&gt; Hi all,
+&gt;
+&gt; as specified for feisty [1] we want to handle spare fixed hard disk
+&gt; partitions in a similarly easy way as we handle removable drives. So
+&gt; far those were not displayed at all on the desktop and it required
+&gt; some command line runes or things like disks-admin (which disappeared
+&gt; from Edgy) to use fixed hard disk partitions.
+&gt;
+&gt; With today's upload of gnome-mount_0.5 2ubuntu3 and last week's upload
+&gt; of hal 0.5.8.1-3ubuntu6 , you will now get icons for hard disk
+&gt; partitions which are *not* automatically mounted from fstab, and can
+&gt; mount them the usual way from the context menu, diskmounter applet,
+&gt; etc.
+&gt;
+&gt; gksu verifies that you are an admin and gets the necessary root
+&gt; privilege for the mounting. If you are not in the 'admin' group, then
+&gt; you cannot mount local hard disks.
+&gt;
+&gt; Known caveats:
+&gt;
+&gt; - The diskmounter applet wants to eject fixed hard disks and gives an
+&gt;    empty error dialog (unomunting works, though). I'll fix that soon.
+&gt;
+&gt; - Non-admins will see icons for fixed hard disk partitions, too,
+&gt;    although they cannot mount them. This is because the visibility of
+&gt;    those are determined by hal, so they are global. If it's too
+&gt;    annoying, I can patch gnome-vfs to hide them for non-admins
+&gt;
+&gt; I welcome any testing feedback (to ubuntu-devel-discuss@ or as bug
+&gt; reports against gnome-mount or hal).
+&gt;
+&gt; Thanks,
+&gt;
+&gt; pitti
+&gt;
+&gt; [1] https://wiki.ubuntu.com/MountAllLocalFilesystems
+&gt;
+&gt; --
+&gt; Martin Pitt        http://www.piware.de
+&gt; Ubuntu Developer   http://www.ubuntu.com
+&gt; Debian Developer   http://www.debian.org
+&gt;
+&gt; Software is like sex -- it's better when it's free! [Linus Torvalds]
+&gt;
+&gt;
+&gt; -----BEGIN PGP SIGNATURE-----
+&gt; Version: GnuPG v1.4.5 (GNU/Linux)
+&gt;
+&gt; iD8DBQFFfmbLDecnbV4Fd/IRAq2fAJsGdGeCFRV0YCiQIc9MA7ReprdPGACfVvL7
+&gt; 7Y+6yiUW5bjPbzdOEk2Y9Pc=
+&gt; =pfzj
+&gt; -----END PGP SIGNATURE-----
+&gt;
+&gt;
+&gt; --
+&gt; ubuntu-devel mailing list
+&gt; ubuntu-devel@lists.ubuntu.com
+&gt; Modify settings or unsubscribe at:
+&gt; https://lists.ubuntu.com/mailman/listinfo/ubuntu-devel
+&gt;
+&gt;
+&gt;</sioc:content>
+    <sioc:subject>Re: New feature: mount local file systems in Gnome, please test</sioc:subject>
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="plugin:mailinglist:20061214061407.GE1457">
+    <qml:to>psusi@cfl.rr.com</qml:to>
+    <qml:from>martin.pitt@ubuntu.com</qml:from>
+    <sioc:has_parent>&lt;20061212082235.GB6072@piware.de&gt; &lt;45807B81.6090906@cfl.rr.com&gt;</sioc:has_parent>
+    <sioc:id>&lt;20061214061407.GE1457@box79162.elkhouse.de&gt;</sioc:id>
+    <sioc:modified_at>2006-12-14T07:14:07</sioc:modified_at>
+    <sioc:content>Hi,
+
+(moving to -discuss)
+
+Phillip Susi [2006-12-13 17:15 -0500]:
+&gt; What about partitions that are flagged as user mountable in fstab?  What 
+&gt; about partitions that are not listed in /etc/fstab at all?  
+
+hal only ignores partitions that are marked as 'auto' in fstab. If
+they are not mounted when the session starts, then something has
+seriously gone wrong and we shouldn't try and touch them with the GUI.
+'user' partitions are usually 'noauto', and if a partition is not
+mentioned in fstab, it's not automatically mounted at boot either, so
+in both cases you can use the GUI now for mounting them.
+
+&gt; Will those be auto mounted with pmount the way removable disks are?
+
+First, pmount is not used any more in Gnome. Second, these partitions
+will never be automatically mounted because only root can do that.
+The change is that the GUI offers you to mount these partitions
+through gksu, which obviously cannot (and should not) happen
+automatically.
+
+Pitti
+
+-- 
+Martin Pitt              http://www.piware.de
+Ubuntu Developer   http://www.ubuntulinux.org
+Debian Developer        http://www.debian.org</sioc:content>
+    <sioc:subject>Re: New feature: mount local file systems in Gnome, please test</sioc:subject>
+    <rdf:type>http://www.qualipso.org/ontology/doc/qualipso_maillinglist#</rdf:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/matt.kuiken@verizon.net">
+    <sioc:email>matt.kuiken@verizon.net</sioc:email>
+    <sioc:last_name>Matthew Kuiken</sioc:last_name>
+    <sioc:name>Matthew Kuiken</sioc:name>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/andreas@schildbach.de">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name>Andreas Schildbach</sioc:name>
+    <sioc:last_name>Andreas Schildbach</sioc:last_name>
+    <sioc:email>andreas@schildbach.de</sioc:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contact/tfheen@ubuntu.com">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#User"/>
+    <sioc:name></sioc:name>
+    <sioc:last_name></sioc:last_name>
+    <sioc:email>tfheen@ubuntu.com</sioc:email>
+  </rdf:Description>
+</rdf:RDF>

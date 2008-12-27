@@ -1,0 +1,110 @@
+PREFIX dc:<http://purl.org/dc/elements/1.1/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wot:<http://xmlns.com/wot/0.1/>
+PREFIX p3:<http://www.w3.org/2000/10/swap/pim/contact#>
+PREFIX p2:<http://xmlns.com/wordnet/1.6/>
+PREFIX p1:<http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX vs:<http://www.w3.org/2003/06/sw-vocab-status/ns#>
+PREFIX foafm:<http://xmlns.com/foafm/0.1/>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX doapm:<http://usefulinc.com/ns/doapm#>
+PREFIX qrs:<http://www.qualipso.org/ontology/doc/qualipso_relationship#>
+PREFIX qrsm:<http://www.qualipso.org/ontology/doc/qualipso_relationshipm#>
+PREFIX protege:<http://protege.stanford.edu/plugins/owl/protege#>
+PREFIX qvc:<http://www.qualipso.org/ontology/doc/qualipso_versioncontrol#>
+PREFIX qdoc:<http://www.qualipso.org/ontology/doc/qualipso_documentation#>
+PREFIX sioc:<http://rdfs.org/sioc/ns#>
+PREFIX qml:<http://www.qualipso.org/ontology/doc/qualipso_maillinglist#>
+PREFIX doap:<http://usefulinc.com/ns/doap#>
+PREFIX qsc:<http://www.qualipso.org/ontology/doc/qualipso_source_code#>
+		
+construct {
+ ?p rdf:type doap:Project;
+    doap:category ?c;
+    doap:programming-language ?pl;
+    doap:os ?os;
+    doap:maintainer ?m;
+    doap:developer ?de;
+    doap:tester ?te;
+    doap:helper ?he;
+    doap:documenter ?do;
+    doap:translator ?tr;
+    doap:screenshots ?sc;
+    doap:download-page ?dp;
+    doap:wiki ?w;
+    doap:homepage ?hp;
+    doap:mailing-list ?ml;
+    doap:download-mirror ?dm;
+    doap:bug-database ?bd;
+    qrs:hasDocStorage ?ds.
+}
+where{
+ ?p rdf:type ?c;
+ OPTIONAL{
+  ?p doapm:programming-language ?pl.
+ }
+
+ OPTIONAL{
+  ?p doapm:os ?os.
+ }
+
+ OPTIONAL{
+  ?p doapm:maintainer ?m.
+ }
+
+ OPTIONAL{
+  ?p doapm:developer ?de.
+ }
+
+ OPTIONAL{
+  ?p doapm:tester ?te.
+ }
+
+ OPTIONAL{
+  ?p doapm:helper ?he.
+ }
+
+ OPTIONAL{
+  ?p doapm:documenter ?do.
+ }
+
+ OPTIONAL{
+  ?p doapm:translator ?tr.
+ }
+
+ OPTIONAL{
+  ?p doapm:screenshots ?sc.
+ }
+
+ OPTIONAL{
+  ?p doapm:download-page ?dp.
+ }
+
+ OPTIONAL{
+  ?p doapm:wiki ?w.
+ }
+
+ OPTIONAL{
+  ?p doapm:homepage ?hp.
+ }
+
+ OPTIONAL{
+  ?p doapm:mailing-list ?ml.
+ }
+
+ OPTIONAL{
+  ?p doapm:download-mirror ?dm.
+ }
+
+ OPTIONAL{
+  ?p doapm:bug-database ?bd.
+ }
+
+ OPTIONAL{
+  ?p qrsm:hasDocStorage ?ds.
+ }
+
+  ?c rdfs:subClassOf doapm:Proj.
+}

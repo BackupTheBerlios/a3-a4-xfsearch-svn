@@ -1,0 +1,100 @@
+PREFIX dc:<http://purl.org/dc/elements/1.1/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wot:<http://xmlns.com/wot/0.1/>
+PREFIX p3:<http://www.w3.org/2000/10/swap/pim/contact#>
+PREFIX p2:<http://xmlns.com/wordnet/1.6/>
+PREFIX p1:<http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX vs:<http://www.w3.org/2003/06/sw-vocab-status/ns#>
+PREFIX foafm:<http://xmlns.com/foafm/0.1/>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX doapm:<http://usefulinc.com/ns/doapm#>
+PREFIX qrs:<http://www.qualipso.org/ontology/doc/qualipso_relationship#>
+PREFIX protege:<http://protege.stanford.edu/plugins/owl/protege#>
+PREFIX qvc:<http://www.qualipso.org/ontology/doc/qualipso_versioncontrol#>
+PREFIX qdoc:<http://www.qualipso.org/ontology/doc/qualipso_documentation#>
+PREFIX sioc:<http://rdfs.org/sioc/ns#>
+PREFIX qml:<http://www.qualipso.org/ontology/doc/qualipso_maillinglist#>
+PREFIX doap:<http://usefulinc.com/ns/doap#>
+PREFIX qsc:<http://www.qualipso.org/ontology/doc/qualipso_source_code#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX qdocm:<http://www.qualipso.org/ontology/doc/qualipso_documentationm#>
+PREFIX qrsm:<http://www.qualipso.org/ontology/doc/qualipso_relationshipm#>
+
+		
+construct {
+ ?ds  rdf:type qdoc:DocumentStorage;
+      qdoc:title ?dst;
+      qdoc:hasFolder ?f.
+ ?f   rdf:type qdoc:Folder;
+      qdoc:title ?ft;
+      qdoc:description ?fd;
+      qdoc:creator ?fc;
+      qdoc:hasDocument ?doc.
+ ?doc rdf:type qdoc:TextDocument;
+      qdoc:dateAccepted ?dda;
+      qdoc:dateSubmitted ?dds;
+      qdoc:description ?dd;
+      qdoc:language ?dla;
+      qdoc:license ?dli;
+      qdoc:subject ?dsu;
+      qdoc:title ?dt;
+      qdoc:contributor ?dcon;
+      qdoc:creator ?dcr;
+      qdoc:publisher ?dp.
+}
+where {
+ ?ds rdf:type qdocm:DocumentStorage.
+ OPTIONAL{
+  ?ds qdocm:title ?dst.
+ }
+ OPTIONAL{
+  ?ds qdocm:hasFolder ?f.
+ }
+ OPTIONAL{
+  ?f qdocm:title ?ft.
+ }
+ OPTIONAL{
+  ?f qdocm:description ?fd.
+ }
+ OPTIONAL{
+  ?f qdocm:creator ?fc.
+ }
+ OPTIONAL{
+  ?f qdocm:hasDocument ?doc.
+ }
+ OPTIONAL{
+  ?doc qdocm:dateAccepted ?dda.
+ }
+ OPTIONAL{
+  ?doc qdocm:dateSubmitted ?dds.
+ }
+ OPTIONAL{
+  ?doc qdocm:description ?dd.
+ }
+ OPTIONAL{
+  ?doc qdocm:language ?dla.
+ }
+ OPTIONAL{
+  ?doc qdocm:license ?dli.
+ }
+ OPTIONAL{
+  ?doc qdocm:subject ?dsu.
+ }
+ OPTIONAL{
+  ?doc qdocm:title ?dt.
+ }
+ OPTIONAL{
+  ?doc qdocm:contributor ?dcon.
+ }
+ OPTIONAL{
+  ?doc qdocm:creator ?dcr.
+ }
+ OPTIONAL{
+  ?doc qdocm:publisher ?dp.
+ }
+ OPTIONAL{
+ ?doc qdocm:hasType ?dty.
+ }
+}

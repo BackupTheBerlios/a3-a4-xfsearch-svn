@@ -1,0 +1,49 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:beatle="http://xmlns.com/baetle/#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#" > 
+  <rdf:Description rdf:about="https://bugs.eclipse.org/bugs/show_bug.cgi?id=113191">
+    <beatle:created>Thu Oct 20 00:54:00 CEST 2005</beatle:created>
+    <beatle:description>Contribution: Command Line Weaver that Can be Packaged with aspectjweaver.jar</beatle:description>
+    <beatle:assigned_to>aspectj-inbox@eclipse.org</beatle:assigned_to>
+    <rdf:type rdf:resource="http://xmlns.com/baetle/#Bug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://bugs.eclipse.org/bugs/show_bug.cgi?id=108895">
+    <beatle:created>Tue Sep 06 22:43:00 CEST 2005</beatle:created>
+    <beatle:description>Allow Binding in User Pointcuts</beatle:description>
+    <beatle:assigned_to>adrian.colyer@gmail.com</beatle:assigned_to>
+    <rdf:type rdf:resource="http://xmlns.com/baetle/#Bug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://bugs.eclipse.org/bugs/show_bug.cgi?id=88842">
+    <beatle:created>Wed Mar 23 08:20:00 CET 2005</beatle:created>
+    <beatle:description>[docs] Strange errors wheb jdom-b9.jar is in classpath</beatle:description>
+    <beatle:assigned_to>adrian.colyer@gmail.com</beatle:assigned_to>
+    <rdf:type rdf:resource="http://xmlns.com/baetle/#Bug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://bugs.eclipse.org/bugs/show_bug.cgi?id=119017">
+    <beatle:created>Fri Dec 02 05:58:00 CET 2005</beatle:created>
+    <beatle:description>[comp-upgrade] JavaCore.create(..) doesn't work</beatle:description>
+    <beatle:assigned_to>aspectj-inbox@eclipse.org</beatle:assigned_to>
+    <rdf:type rdf:resource="http://xmlns.com/baetle/#Bug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://bugs.eclipse.org/bugs/show_bug.cgi?id=93656">
+    <beatle:created>Wed May 04 11:14:00 CEST 2005</beatle:created>
+    <beatle:description>ISwitchoffable - a way to control execution of advice at the aspect level.</beatle:description>
+    <beatle:assigned_to>adrian.colyer@gmail.com</beatle:assigned_to>
+    <rdf:type rdf:resource="http://xmlns.com/baetle/#Bug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111027">
+    <beatle:created>Wed Sep 28 23:40:00 CEST 2005</beatle:created>
+    <beatle:description>Contribution: Loadtime Weaving Agent for WebSphere</beatle:description>
+    <beatle:assigned_to>adrian.colyer@gmail.com</beatle:assigned_to>
+    <rdf:type rdf:resource="http://xmlns.com/baetle/#Bug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://bugs.eclipse.org/bugs/show_bug.cgi?id=95506">
+    <beatle:created>Tue May 17 03:21:00 CEST 2005</beatle:created>
+    <beatle:description>[ataspectj] @AJ in the compiler</beatle:description>
+    <beatle:assigned_to>adrian.colyer@gmail.com</beatle:assigned_to>
+    <rdf:type rdf:resource="http://xmlns.com/baetle/#Bug"/>
+  </rdf:Description>
+</rdf:RDF>

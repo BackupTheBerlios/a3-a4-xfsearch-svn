@@ -1,0 +1,19 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX p1: <http://xmlns.com/wordnet/1.6/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX foafm: <http://xmlns.com/foafm/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xmls: <http://www.w3.org/2001/XMLSchema#>
+		
+CONSTRUCT {	
+?m rdf:type foaf:Person;
+  foaf:firstName ?mp;
+  foaf:surname ?mn;
+  foaf:family_name ?mn.      
+} 							
+where {
+?m rdf:type foafm:Member;
+   foafm:nomen ?mn;
+   foafm:praenomen ?mp.
+}
